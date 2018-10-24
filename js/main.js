@@ -8,7 +8,7 @@ let projectModel = {
       description: 'This project was developed for easy and quick access to tools, news and information of students by parents, teachers, administrators and lastly of a school,' +
         'eradicating the manual storage and handling of school records while keeping the users in form and notified of every information with the help of a push notification mechanism',
       skills: ['Java', 'Android', 'Php', 'MySql', 'Google Api', 'Gson'],
-      imagePath: 'images/school.jpg'
+      imagePath: 'images/school_app.png'
     },
     {
       title: 'BakeAid',
