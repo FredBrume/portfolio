@@ -1,0 +1,260 @@
+@media screen and (max-width: 768px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+  }
+  .nav__list {
+    display: none;
+  }
+  .heading h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #toggle {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 6px;
+  }
+  #menu a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {  /* minimum 1200 do this */
+
+    .modal-body .project-summary p{
+      width: 95%;
+    }
+    .modal-body .project-summary {
+      width: 50%;
+      height: auto;
+    }
+
+    .modal-body .project-image {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .modal-body .project-image img {
+      width: 100%;
+      height: auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+  #resize {
+    display: none;
+  }
+  #toggle .span {
+    height: 3px;
+    background: #40C4FF;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    /* backface-visibility: hidden; */
+  }
+
+  .nav__list {
+    left: 10%;
+  }
+  .section-main .container .portfolio .image-box {
+    width: 300px;
+    height: 220px;
+    margin: 30px 30px;
+  }
+  .section-main .container .portfolio .image-box img {
+    width: 100%;
+    height: 80%;
+    margin-right: 0;
+    margin-bottom: auto;
+  }
+  .section-main .container.portfolio .image-box p {
+    font-size: 15px;
+  }
+  .section-main .container .mapDiv {
+    margin: 0px 15px;
+  }
+  .section-main .container .dev-links {
+    height: 200px
+  }
+
+}
+
+@media screen and (min-width: 400px) {
+  .section-main .container .portfolio .image-box {
+    width: 300px;
+    height: 250px;
+    margin: 14px 14px;
+  }
+  .section-main .container .portfolio .image-box img {
+    width: 100%;
+    height: 80%;
+    margin-right: 0;
+    margin-left:0;
+    margin-bottom: auto;
+  }
+
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){  /* reduce the modal container*/
+
+  .modal-body .project-summary {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-body .project-image {
+    margin: 0 auto;
+  }
+
+  .modal-body .project-image img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .nav__list {
+    left: 45%;
+  }
+  .section-main .container .portfolio .image-box {
+    width: 210px;
+    height: 170px;
+    margin: 14px 14px;
+  }
+  .section-main .container .portfolio .image-box img {
+    width: 100%;
+    height: 77%;
+    margin-right: 0;
+    margin-bottom: auto;
+  }
+  .section-main .container .portfolio {
+    margin: 14px 2px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .modal-body .project-summary {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-body .project-image {
+    margin: 0 auto;
+  }
+
+  .modal-body .project-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav__list {
+    left: 10%;
+  }
+  .section-main .container {
+    overflow: hidden;
+  }
+  .section-main .container .profile {
+    width: 100%;
+  }
+  .section-main .container .profile div {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .section-main .container .profile img {
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+  }
+  .section-main .container .summary {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+  .section-main .container .summary div {
+    width: 50%;
+    display: block;
+    max-width: 100%;
+  }
+  .section-main .container .summary ul {
+    width: 100%;
+    margin: auto;
+  }
+  .section-main .container .summary ul img {
+    width: 40px;
+    height: 40px;
+  }
+  .section-main .container .summary p {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .section-main .container .certification {
+    margin: 4px;
+    padding: 4px;
+  }
+  .section-main .container .certification button.accordion {
+    font-size: 15px;
+    font-style: italic;
+    padding: 4px 4px;
+  }
+  .section-main .container .subtitle {
+    font-size: 17px;
+  }
+  .section-main .container div {
+    width: 50%;
+  }
+  .section-main .container .portfolio {
+    margin: 0 0;
+  }
+  .section-main .container .portfolio .image-box {
+    width: 450px;
+    height: 350px;
+    margin: 10px 14px;
+  }
+  .section-main .container .portfolio .image-box img {
+    width: 100%;
+    height: 85%;
+  }
+  .section-main .container .portfolio .image-box p {
+    font-size: 17px;
+  }
+  .section-main .container .mapDiv {
+    margin: 0px 15px;
+  }
+  .section-main .container .dev-links {
+    height: 200px;
+  }
+  .section-main .container .dev-links ul {
+    list-style: none;
+    padding:0 80px;
+  }
+
+  .section-main .container .dev-links p {
+    font-size: 18px;
+    color: #424242;
+    padding:0 40px;
+  }
+
+  .section-main .container .contact-details {
+    width: 100%;
+    order: 6;
+    margin: 0 0;
+  }
+}
