@@ -1,2 +1,2 @@
 # My portfolio
-[Click here.](https://fredbrume.github.io/Neigbourhood/.)
+[Click here.](https://fredbrume.github.io/portfolio)
