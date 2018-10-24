@@ -394,13 +394,13 @@ li a:hover {
 
 .section-main .container .certification p {
   text-align: center;
-  color: #424242;
+  /* color: #424242; */
   font-size: 23px;
 }
 
 .section-main .container .certification button.accordion: before {
   content: '\f058';
-  /* color: #6190C3; */
+  color: #6190C3;
 }
 
 .section-main .container .certification button.accordion {
