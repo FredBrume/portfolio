@@ -1,2 +1,2 @@
 # My portfolio
-click here for live view
+[Click here.](https://fredbrume.github.io/Neigbourhood/.)
