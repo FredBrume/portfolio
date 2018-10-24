@@ -400,7 +400,7 @@ li a:hover {
 
 .section-main .container .certification button.accordion: before {
   content: '\f058';
-  color: #6190C3;
+  /* color: #6190C3; */
 }
 
 .section-main .container .certification button.accordion {
@@ -424,7 +424,7 @@ li a:hover {
 
 .section-main .container .certification button.accordion:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  /* color: #0091EA; */
+  color: #0091EA;
   text-decoration: underline;
   transition: all 0.3s ease-out;
 }
@@ -432,7 +432,7 @@ li a:hover {
 .accordion:before {
   content: '\25B6';
   margin-right: 10px;
-  /* color: #0091EA; */
+  color: #0091EA;
 }
 
 .active:after {
