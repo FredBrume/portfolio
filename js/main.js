@@ -49,6 +49,9 @@ let controller = {
   },
 
   setSelectedProject: function(project) {
+    if(!projectModel.currentProject){
+      this.clearProjects();
+    }
     projectModel.currentProject = project;
   },
 
@@ -87,12 +90,14 @@ let view = {
     const projectSummary = document.querySelector('.project-summary');
     const projectImage = document.querySelector('.project-image');
     const footer = document.querySelector('.modal-footer');
-    const image = document.createElement('img');
+    const skillDiv = document.querySelector('.skill-div');
+    const image = projectImage.children[0];
 
     image.src = project.imagePath;
     header.children[1].innerHTML = project.title;
     projectSummary.children[1].innerHTML = project.description;
 
+    console.log(project.skills);
 
     project.skills.forEach(function(skill) {
 
@@ -100,6 +105,7 @@ let view = {
       const skillCheckBox = document.createElement('input');
       const skillCheckBoxLabel = document.createElement('label');
 
+      skillItemDiv.className = 'skill-div-item';
       skillItemDiv.style.margin = '7px 0';
       skillCheckBox.type = "checkbox";
       skillCheckBox.checked = true;
@@ -111,8 +117,7 @@ let view = {
 
       skillItemDiv.appendChild(skillCheckBox);
       skillItemDiv.appendChild(skillCheckBoxLabel);
-      projectSummary.appendChild(skillItemDiv);
-      projectImage.appendChild(image);
+      skillDiv.appendChild(skillItemDiv);
 
     });
   },
@@ -263,16 +268,16 @@ let view = {
 
       };
     });
-
-    controller.clearProjects();  //unsubscribe data from currentProject
-    console.log("Deeee");
-    console.log(projectModel.currentProject);
-
+    // this.delSkillItem();
   },
 
-  clearChildNodes: function(parentNode, childNode) {
-    parentNode.removeChild(childNode);
-  }
+  delSkillItem: function (){
+    var skillDivItems = document.querySelector('.skill-div-item');
+    for(var i = 0; i < skillDivItems.length; i++){
+      let skillDivItem = skillDivItems[i];
+          skillDivItem.parentNode.removeChild(skillDivItem);
+        }
+    }
 };
 
 window.sr = new ScrollReveal();
