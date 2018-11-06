@@ -8,7 +8,7 @@ let projectModel = {
       description: 'This project was developed for easy and quick access to tools, news and information of students by parents, teachers, administrators and lastly of a school,' +
         'eradicating the manual storage and handling of school records while keeping the users in form and notified of every information with the help of a push notification mechanism',
       skills: ['Java', 'Android', 'Php', 'MySql', 'Google Api', 'Gson'],
-      imagePath: 'images/school_app.png'
+      imagePath: 'images/school.jpg'
     },
     {
       title: 'BakeAid',
@@ -262,17 +262,17 @@ let view = {
 
       element.onclick = function(evt) {
         modal.style.display = 'none';
+        view.delSkillItem();
 
         evt.preventDefault();
         $('body').css('overflow', 'auto');
 
       };
     });
-    // this.delSkillItem();
   },
 
   delSkillItem: function (){
-    var skillDivItems = document.querySelector('.skill-div-item');
+    var skillDivItems = document.querySelectorAll('.skill-div-item');
     for(var i = 0; i < skillDivItems.length; i++){
       let skillDivItem = skillDivItems[i];
           skillDivItem.parentNode.removeChild(skillDivItem);
