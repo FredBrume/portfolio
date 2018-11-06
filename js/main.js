@@ -14,7 +14,7 @@ let projectModel = {
       title: 'BakeAid',
       description: 'This mobile app is a fully-featured app developed to provide walkthroughs of baking recipes. Media loading was handled and the UI was verified and tested using an integrated third party library' +
         'Expresso and a complete UX with home screen widget was provided.',
-      skills: ['Java', 'Android'],
+      skills: ['Java', 'Android', 'Expresso','ButterKnife','Exo player'],
       imagePath: 'images/baking.jpg'
     },
     {
